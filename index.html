@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Orgamic</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="block">
+                        <div class="left">
+                            <div class="location">
+                                <p>15/A, Nest Tower, NYC</p>
+                            </div>
+                            <div class="mail">
+                                <p>info@webmail.com</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="apps">
+                                <p>English</p>
+                                <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.55 7.475H6.175L6.825 4.875H4.55V3.575C4.55 2.9055 4.55 2.275 5.85 2.275H6.825V0.0910001C6.6131 0.0630501 5.81295 0 4.96795 0C3.2032 0 1.95 1.07705 1.95 3.055V4.875H0V7.475H1.95V13H4.55V7.475Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.3536 1.30582C13.8469 1.52995 13.3096 1.67715 12.7594 1.74254C13.3393 1.39571 13.7734 0.849859 13.9806 0.206713C13.4364 0.530605 12.8397 0.757594 12.2178 0.880381C11.8001 0.433423 11.2464 0.136999 10.6428 0.037191C10.0392 -0.062617 9.41956 0.0397836 8.88018 0.328473C8.3408 0.617163 7.91191 1.07597 7.66018 1.63356C7.40845 2.19115 7.34799 2.81628 7.4882 3.41178C6.38452 3.35646 5.30481 3.06965 4.31917 2.56997C3.33352 2.07029 2.46399 1.3689 1.767 0.511357C1.52029 0.935104 1.39065 1.41681 1.39134 1.90714C1.39134 2.86953 1.88116 3.71974 2.62585 4.21752C2.18515 4.20365 1.75415 4.08464 1.36878 3.8704V3.90492C1.36891 4.54586 1.5907 5.16704 1.99655 5.66313C2.40239 6.15922 2.96731 6.49968 3.59553 6.6268C3.18643 6.73766 2.75746 6.754 2.34111 6.67459C2.51824 7.22629 2.86346 7.70878 3.32845 8.05452C3.79343 8.40025 4.3549 8.59191 4.93424 8.60267C4.35845 9.05487 3.69919 9.38916 2.99413 9.5864C2.28907 9.78365 1.55204 9.84 0.825195 9.75222C2.09401 10.5682 3.57104 11.0014 5.07959 11C10.1855 11 12.9778 6.77016 12.9778 3.10182C12.9778 2.98236 12.9744 2.86156 12.9691 2.74342C13.5126 2.35061 13.9817 1.86401 14.3543 1.30648L14.3536 1.30582Z"
+                                        fill="#76A713" />
+                                </svg>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.85449 0C8.62054 0 8.84089 0.00649996 9.53379 0.039C10.226 0.0715 10.6973 0.18005 11.112 0.34125C11.541 0.50635 11.9024 0.72995 12.2638 1.0907C12.5943 1.41563 12.8501 1.80868 13.0132 2.2425C13.1738 2.65655 13.283 3.12845 13.3155 3.8207C13.346 4.5136 13.3545 4.73395 13.3545 6.5C13.3545 8.26605 13.348 8.4864 13.3155 9.1793C13.283 9.87155 13.1738 10.3428 13.0132 10.7575C12.8505 11.1916 12.5947 11.5847 12.2638 11.9093C11.9388 12.2397 11.5457 12.4954 11.112 12.6587C10.6979 12.8193 10.226 12.9285 9.53379 12.961C8.84089 12.9915 8.62054 13 6.85449 13C5.08844 13 4.86809 12.9935 4.17519 12.961C3.48294 12.9285 3.01169 12.8193 2.59699 12.6587C2.163 12.4959 1.76988 12.2401 1.44519 11.9093C1.11461 11.5844 0.858848 11.1914 0.695742 10.7575C0.534542 10.3434 0.425992 9.87155 0.393492 9.1793C0.362942 8.4864 0.354492 8.26605 0.354492 6.5C0.354492 4.73395 0.360992 4.5136 0.393492 3.8207C0.425992 3.1278 0.534542 2.6572 0.695742 2.2425C0.858396 1.80842 1.11421 1.41526 1.44519 1.0907C1.76998 0.76 2.16307 0.504224 2.59699 0.34125C3.01169 0.18005 3.48229 0.0715 4.17519 0.039C4.86809 0.00844996 5.08844 0 6.85449 0ZM6.85449 3.25C5.99254 3.25 5.16589 3.59241 4.5564 4.2019C3.9469 4.8114 3.60449 5.63805 3.60449 6.5C3.60449 7.36195 3.9469 8.1886 4.5564 8.7981C5.16589 9.40759 5.99254 9.75 6.85449 9.75C7.71645 9.75 8.5431 9.40759 9.15259 8.7981C9.76208 8.1886 10.1045 7.36195 10.1045 6.5C10.1045 5.63805 9.76208 4.8114 9.15259 4.2019C8.5431 3.59241 7.71645 3.25 6.85449 3.25ZM11.0795 3.0875C11.0795 2.87201 10.9939 2.66535 10.8415 2.51298C10.6891 2.3606 10.4825 2.275 10.267 2.275C10.0515 2.275 9.84484 2.3606 9.69247 2.51298C9.54009 2.66535 9.45449 2.87201 9.45449 3.0875C9.45449 3.30299 9.54009 3.50965 9.69247 3.66202C9.84484 3.8144 10.0515 3.9 10.267 3.9C10.4825 3.9 10.6891 3.8144 10.8415 3.66202C10.9939 3.50965 11.0795 3.30299 11.0795 3.0875ZM6.85449 4.55C7.37166 4.55 7.86765 4.75545 8.23335 5.12114C8.59905 5.48684 8.80449 5.98283 8.80449 6.5C8.80449 7.01717 8.59905 7.51316 8.23335 7.87886C7.86765 8.24455 7.37166 8.45 6.85449 8.45C6.33732 8.45 5.84133 8.24455 5.47563 7.87886C5.10994 7.51316 4.90449 7.01717 4.90449 6.5C4.90449 5.98283 5.10994 5.48684 5.47563 5.12114C5.84133 4.75545 6.33732 4.55 6.85449 4.55Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.24322 1.44509C3.24303 1.82816 3.09067 2.19546 2.81967 2.46619C2.54866 2.73693 2.1812 2.88892 1.79813 2.88873C1.41507 2.88854 1.04776 2.73618 0.777026 2.46517C0.506291 2.19417 0.354301 1.82671 0.354492 1.44364C0.354684 1.06057 0.507041 0.693269 0.778047 0.422534C1.04905 0.151798 1.41651 -0.000191354 1.79958 1.80807e-07C2.18265 0.000191715 2.54995 0.152549 2.82069 0.423555C3.09142 0.694562 3.24341 1.06202 3.24322 1.44509ZM3.28655 3.95828H0.397823V13H3.28655V3.95828ZM7.85074 3.95828H4.97646V13H7.82186V8.25526C7.82186 5.61208 11.2667 5.36654 11.2667 8.25526V13H14.1193V7.2731C14.1193 2.81723 9.02068 2.98333 7.82186 5.17155L7.85074 3.95828Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="block">
+                        <a href="">
+                            <img src="img/Logo.png" alt="">
+                        </a>
+                        <nav>
+                            <ul class="menu_list">
+                                <li class="menu_item">
+                                    <a href="" class="menu_link">Home +</a>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="" class="menu_link">Service +</a>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="" class="menu_link">Top cities +</a>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="" class="menu_link">Contract</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header_box">
+                            <button class="login">
+                                Login
+                            </button>
+                            <button class="search">
+                                <img src="img/Search.svg" alt="img">
+                            </button>
+                            <button class="cart">
+                                <img src="img/Buy.svg" alt="img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="s1">
+            <div class="container position">
+                <div class="slider">
+                    <div class="swiper-wrapper">
+                        <div class="block swiper-slide">
+                            <div class="left">
+                                <h1><span>body needs</span> <br> organic food <br> good health</h1>
+                                <div class="button">
+                                    <button>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/Main.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="block swiper-slide">
+                            <div class="left">
+                                <h1><span>body needs</span> <br> organic food <br> good health</h1>
+                                <div class="button">
+                                    <button>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/Main.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="block swiper-slide">
+                            <div class="left">
+                                <h1><span>body needs</span> <br> organic food <br> good health</h1>
+                                <div class="button">
+                                    <button>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/Main.png" alt="img">
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="slider-inner">
+                    <div class="slider-next">
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0V4.5Z" fill="black"/>
+                        </svg>                                
+                    </div>
+                    <div class="slider-prev">
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0V4.5Z" fill="black"/>
+                        </svg>                                
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s1-1">
+            <div class="container">
+                <div class="s1-bottom">
+                    <div class="delivery">
+                        <p>Free Shipping</p>
+                        <div class="text-bottom">
+                            On all orders over $35.00
+                        </div>
+                    </div>
+                    <div class="return">
+                        <p>15 day returns</p>
+                        <div class="text-bottom">
+                            Moneyback guarantee
+                        </div>
+                    </div>
+                    <div class="product">
+                        <p>Fresh product</p>
+                        <div class="text-bottom">
+                            Best online organic food
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <p>Summer offer</p>
+                        <div class="text-bottom">
+                            On all orders over
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="container">
+                <div class="block">
+                    <div class="left">
+                        <img src="img/Plant.png" alt="img">
+                        <div class="groceries">
+                            <img src="img/Groceries.png" alt="img">
+                            <p>15+ Years <br> Experience</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>High quality <br> organic food store</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore</p>
+                        </div>
+                        <div class="name">
+                            Hasan Mahmud
+                            <p>Shop Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="container">
+                <div class="block">
+                    <div class="item">
+                        <img src="img/Fondue.png" alt="img">
+                        <h3>Vegetables</h3>
+                        <p>Purchasing from select family farmers who farm onganically.</p>
+                        <button>SHOP NOW</button>
+                        <div class="svg">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51525 6.73283 8.177C6.73283 8.18892 6.86558 8.84525 6.95008 9.06367C7.08283 9.3795 7.32283 9.6475 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99033 8.93283 9.88575 9.17758 9.798L9.381 9.72C10.7282 9.18483 13.3037 7.43617 14.29 6.36683L14.3628 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9037 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39643 10.721 0.851525 9.501 0.339633C9.501 0.328625 8.74283 0.0119333 8.38192 0H8.33375C7.78008 0 7.26283 0.315767 6.99825 0.826142C6.926 0.965667 6.85667 1.23898 6.804 1.47902L6.70917 1.93226C6.601 2.6611 6.52917 3.77917 6.52917 5.0055ZM1.25271 3.73475C0.5609 3.73475 0 4.30108 0 4.99967C0 5.69817 0.5609 6.26458 1.25271 6.26458L4.3354 5.99192C4.87813 5.99192 5.31812 5.54858 5.31812 4.99967C5.31812 4.45158 4.87813 4.00733 4.3354 4.00733L1.25271 3.73475Z"
+                                    fill="#76A713" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Strawberries.png" alt="img">
+                        <h3>Fresh Fruits</h3>
+                        <p>Purchasing from select family farmers who farm onganically.</p>
+                        <button>SHOP NOW</button>
+                        <div class="svg">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51525 6.73283 8.177C6.73283 8.18892 6.86558 8.84525 6.95008 9.06367C7.08283 9.3795 7.32283 9.6475 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99033 8.93283 9.88575 9.17758 9.798L9.381 9.72C10.7282 9.18483 13.3037 7.43617 14.29 6.36683L14.3628 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9037 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39643 10.721 0.851525 9.501 0.339633C9.501 0.328625 8.74283 0.0119333 8.38192 0H8.33375C7.78008 0 7.26283 0.315767 6.99825 0.826142C6.926 0.965667 6.85667 1.23898 6.804 1.47902L6.70917 1.93226C6.601 2.6611 6.52917 3.77917 6.52917 5.0055ZM1.25271 3.73475C0.5609 3.73475 0 4.30108 0 4.99967C0 5.69817 0.5609 6.26458 1.25271 6.26458L4.3354 5.99192C4.87813 5.99192 5.31812 5.54858 5.31812 4.99967C5.31812 4.45158 4.87813 4.00733 4.3354 4.00733L1.25271 3.73475Z"
+                                    fill="#76A713" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Eggplant.png" alt="img">
+                        <h3>Eggpent</h3>
+                        <p>Purchasing from select family farmers who farm onganically.</p>
+                        <button>SHOP NOW</button>
+                        <div class="svg">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51525 6.73283 8.177C6.73283 8.18892 6.86558 8.84525 6.95008 9.06367C7.08283 9.3795 7.32283 9.6475 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99033 8.93283 9.88575 9.17758 9.798L9.381 9.72C10.7282 9.18483 13.3037 7.43617 14.29 6.36683L14.3628 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9037 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39643 10.721 0.851525 9.501 0.339633C9.501 0.328625 8.74283 0.0119333 8.38192 0H8.33375C7.78008 0 7.26283 0.315767 6.99825 0.826142C6.926 0.965667 6.85667 1.23898 6.804 1.47902L6.70917 1.93226C6.601 2.6611 6.52917 3.77917 6.52917 5.0055ZM1.25271 3.73475C0.5609 3.73475 0 4.30108 0 4.99967C0 5.69817 0.5609 6.26458 1.25271 6.26458L4.3354 5.99192C4.87813 5.99192 5.31812 5.54858 5.31812 4.99967C5.31812 4.45158 4.87813 4.00733 4.3354 4.00733L1.25271 3.73475Z"
+                                    fill="#76A713" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Tomatoes.png" alt="img">
+                        <h3>Tomato</h3>
+                        <p>Purchasing from select family farmers who farm onganically.</p>
+                        <button>SHOP NOW</button>
+                        <div class="svg">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51525 6.73283 8.177C6.73283 8.18892 6.86558 8.84525 6.95008 9.06367C7.08283 9.3795 7.32283 9.6475 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99033 8.93283 9.88575 9.17758 9.798L9.381 9.72C10.7282 9.18483 13.3037 7.43617 14.29 6.36683L14.3628 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9037 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39643 10.721 0.851525 9.501 0.339633C9.501 0.328625 8.74283 0.0119333 8.38192 0H8.33375C7.78008 0 7.26283 0.315767 6.99825 0.826142C6.926 0.965667 6.85667 1.23898 6.804 1.47902L6.70917 1.93226C6.601 2.6611 6.52917 3.77917 6.52917 5.0055ZM1.25271 3.73475C0.5609 3.73475 0 4.30108 0 4.99967C0 5.69817 0.5609 6.26458 1.25271 6.26458L4.3354 5.99192C4.87813 5.99192 5.31812 5.54858 5.31812 4.99967C5.31812 4.45158 4.87813 4.00733 4.3354 4.00733L1.25271 3.73475Z"
+                                    fill="#76A713" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="container">
+                <h2>popular Products</h2>
+                <ul class="tabs">
+                    <li class="tab">All</li>
+                    <li class="tab">Food</li>
+                    <li class="tab">Organic</li>
+                    <li class="tab">Fruits</li>
+                    <li class="tab">Health</li>
+                    <li class="tab">Seafood</li>
+                </ul>
+                <div class="block">
+                    <div class="goods">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Blackberry.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Blackberry Fruit
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $10.00 - $20.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Avocado1.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Avocado Fruit
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $30.00 - $15.00
+                                </div>
+                                <img src="img/Fourstars.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Kiwi.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Kiwifruit Vitamin
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $17.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Lemon.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Lemon
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $7.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Onion.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Purple onion
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $30.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/Almonds.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Brown Almonds
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $11.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="container">
+                <div class="block">
+                    <div class="green">
+                        <div class="left">
+                            <img src="img/Broccoli.png" alt="img">
+                        </div>
+                        <div class="right">
+                            <div class="discount">
+                                <p>Save up to 50%</p>
+                            </div>
+                            <h3>THE BLUEPRINT <br> TO HEALTH</h3>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="orange">
+                        <div class="left">
+                            <img src="img/Pineapple.png" alt="img">
+                        </div>
+                        <div class="right">
+                            <div class="discount">
+                                <p>offer 30% discount</p>
+                            </div>
+                            <h3>FRUITS & <br> VEGETABLES</h3>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="block cont-slider">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Pepper.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Red Pepper
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $10.00 - $20.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Cabbage.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Cabbage
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $30.00 - $15.00
+                                </div>
+                                <img src="img/Fourstars.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Tomato.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Tomato
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Pepper.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Red Pepper
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $10.00 - $20.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Cabbage.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Cabbage
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $30.00 - $15.00
+                                </div>
+                                <img src="img/Fourstars.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Tomato.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Tomato
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Pepper.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Red Pepper
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $10.00 - $20.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Cabbage.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Cabbage
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $30.00 - $15.00
+                                </div>
+                                <img src="img/Fourstars.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="item_img">
+                                <img src="img/Tomato.png" alt="img">
+                            </div>
+                            <div class="title">
+                                Tomato
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <img src="img/Star.png" alt="img">
+                            </div>
+                            <button>SHOP NOW</button>
+                            <div class="circle-img first">
+                                <img src="img/Arrows.png" alt="img">
+                            </div>
+                            <div class="circle-img second">
+                                <img src="img/Heart.png" alt="img">
+                            </div>
+                            <div class="circle-img third">
+                                <img src="img/Square.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-slider-inner">
+                    <div class="cont-slider-prev">
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51522 6.73283 8.17698C6.73283 8.18891 6.86558 8.84523 6.95008 9.06371C7.08283 9.37948 7.32283 9.64751 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99036 8.93283 9.88572 9.17757 9.79798L9.38097 9.72003C10.7282 9.18488 13.3037 7.4362 14.29 6.36683L14.3627 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9036 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39642 10.721 0.851501 9.50098 0.339667C9.50098 0.328584 8.74283 0.0119171 8.38192 0H8.33375C7.78008 0 7.26283 0.31575 6.99825 0.826167C6.926 0.965667 6.85667 1.239 6.804 1.479L6.70917 1.93225C6.601 2.66108 6.52917 3.77917 6.52917 5.0055ZM1.25275 3.73475C0.560917 3.73475 0 4.30108 0 4.99967C0 5.69817 0.560917 6.26458 1.25275 6.26458L4.33542 5.99192C4.87808 5.99192 5.31808 5.54858 5.31808 4.99967C5.31808 4.45158 4.87808 4.00733 4.33542 4.00733L1.25275 3.73475Z"
+                                fill="#76A713" />
+                        </svg>
+                    </div>
+                    <div class="cont-slider-next">
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.52917 5.0055L6.5305 5.30058C6.54058 6.471 6.61117 7.51522 6.73283 8.17698C6.73283 8.18891 6.86558 8.84523 6.95008 9.06371C7.08283 9.37948 7.32283 9.64751 7.62375 9.81733C7.86467 9.9385 8.11733 10 8.38192 10C8.58983 9.99036 8.93283 9.88572 9.17757 9.79798L9.38097 9.72003C10.7282 9.18488 13.3037 7.4362 14.29 6.36683L14.3627 6.29208L14.6873 5.94183C14.8918 5.67375 15 5.34608 15 4.99358C15 4.67783 14.9036 4.362 14.7109 4.10683C14.6532 4.02417 14.5603 3.91808 14.4776 3.8285L14.1617 3.49783C13.0746 2.39642 10.721 0.851501 9.50098 0.339667C9.50098 0.328584 8.74283 0.0119171 8.38192 0H8.33375C7.78008 0 7.26283 0.31575 6.99825 0.826167C6.926 0.965667 6.85667 1.239 6.804 1.479L6.70917 1.93225C6.601 2.66108 6.52917 3.77917 6.52917 5.0055ZM1.25275 3.73475C0.560917 3.73475 0 4.30108 0 4.99967C0 5.69817 0.560917 6.26458 1.25275 6.26458L4.33542 5.99192C4.87808 5.99192 5.31808 5.54858 5.31808 4.99967C5.31808 4.45158 4.87808 4.00733 4.33542 4.00733L1.25275 3.73475Z"
+                                fill="#76A713" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div class="container">
+                <div class="block">
+                    <div class="text">
+                        <h3>1570+</h3>
+                        <p>Total Products</p>
+                    </div>
+                    <div class="text">
+                        <h3>3560+</h3>
+                        <p>Satisfied Clients</p>
+                    </div>
+                    <div class="text">
+                        <h3>4550+</h3>
+                        <p>Project Completed</p>
+                    </div>
+                    <div class="text">
+                        <h3>130+</h3>
+                        <p>Awards Winning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s8">
+            <div class="container">
+                <div class="block">
+                    <div class="left">
+                        <img class="one" src="img/Testimonials.png" alt="img">
+                        <img class="two" src="img/Man.png" alt="img">
+                    </div>
+                    <div class="right pagination">
+                        <div class="swiper-wrapper">
+                            <div class="item swiper-slide">
+                                <div class="content">
+                                    <div class="comment">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod
+                                            tempor incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim
+                                            veniam.”</p>
+                                    </div>
+                                    <img class="circle-img" src="img/Alison.png" alt="img">
+                                    <div class="name">
+                                        <p>Alison Parker</p>
+                                    </div>
+                                    <div class="job">
+                                        <p>Product Manager</p>
+                                    </div>
+                                    <img src="img/Star.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="item swiper-slide">
+                                <div class="content">
+                                    <div class="comment">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod
+                                            tempor incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim
+                                            veniam.”</p>
+                                    </div>
+                                    <img class="circle-img" src="img/Alison.png" alt="img">
+                                    <div class="name">
+                                        <p>Alison Parker</p>
+                                    </div>
+                                    <div class="job">
+                                        <p>Product Manager</p>
+                                    </div>
+                                    <img src="img/Star.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="item swiper-slide">
+                                <div class="content">
+                                    <div class="comment">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod
+                                            tempor incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim
+                                            veniam.”</p>
+                                    </div>
+                                    <img class="circle-img" src="img/Alison.png" alt="img">
+                                    <div class="name">
+                                        <p>Alison Parker</p>
+                                    </div>
+                                    <div class="job">
+                                        <p>Product Manager</p>
+                                    </div>
+                                    <img src="img/Star.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-pagination-inner">
+                            <div class="slider-pagination">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orange">
+                    </div>
+                    <div class="green">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s9">
+            <div class="container">
+                <h2>Latest Blog</h2>
+                <div class="block">
+                    <div class="item">
+                        <img class="fruit" src="img/Lime.png" alt="img">
+                        <div class="img-bottom">
+                            <div class="admin">
+                                By: Admin
+                            </div>
+                            <div class="service">
+                                Services
+                            </div>
+                            <div class="comment">
+                                04 Comment
+                            </div>
+                        </div>
+                        <h3>Common engine oil <br> problems and solutions</h3>
+                        <div class="item-bottom">
+                            <p>August 27, 2021</p>
+                            <a href="">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="fruit" src="img/Avocado2.png" alt="img">
+                        <div class="img-bottom">
+                            <div class="admin">
+                                By: Admin
+                            </div>
+                            <div class="service">
+                                Services
+                            </div>
+                            <div class="comment">
+                                04 Comment
+                            </div>
+                        </div>
+                        <h3>How and when to replace <br> brack rotors</h3>
+                        <div class="item-bottom">
+                            <p>August 27, 2021</p>
+                            <a href="">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="fruit" src="img/Strawberry.png" alt="img">
+                        <div class="img-bottom">
+                            <div class="admin">
+                                By: Admin
+                            </div>
+                            <div class="service">
+                                Services
+                            </div>
+                            <div class="comment">
+                                04 Comment
+                            </div>
+                        </div>
+                        <h3>Elenance, Services <br> and repirs</h3>
+                        <div class="item-bottom">
+                            <p>August 27, 2021</p>
+                            <a href="">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s10">
+            <div class="container">
+                <div class="block">
+                    <div class="left">
+                        <img class="first" src="img/Salad.png" alt="img">
+                        <img class="second" src="img/Snake.png" alt="img">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            Subscribe To Newsletter
+                        </div>
+                        <div class="title-bottom">
+                            <form action="">
+                                <input type="text" placeholder="Enter your email address...">
+                            </form>
+                            <button>
+                                SUBSCRIBE NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="block">
+                    <div class="left">
+                        <div class="item first">
+                            <img src="img/Logo1.png" alt="img">
+                            <p>There are many variations of <br> passages of Lorem Ipsum available, <br> but the
+                                majority have suffered <br> alteration in some form.</p>
+                            <div class="apps">
+                                <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.55 7.475H6.175L6.825 4.875H4.55V3.575C4.55 2.9055 4.55 2.275 5.85 2.275H6.825V0.0910001C6.6131 0.0630501 5.81295 0 4.96795 0C3.2032 0 1.95 1.07705 1.95 3.055V4.875H0V7.475H1.95V13H4.55V7.475Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.3536 1.30582C13.8469 1.52995 13.3096 1.67715 12.7594 1.74254C13.3393 1.39571 13.7734 0.849859 13.9806 0.206713C13.4364 0.530605 12.8397 0.757594 12.2178 0.880381C11.8001 0.433423 11.2464 0.136999 10.6428 0.037191C10.0392 -0.062617 9.41956 0.0397836 8.88018 0.328473C8.3408 0.617163 7.91191 1.07597 7.66018 1.63356C7.40845 2.19115 7.34799 2.81628 7.4882 3.41178C6.38452 3.35646 5.30481 3.06965 4.31917 2.56997C3.33352 2.07029 2.46399 1.3689 1.767 0.511357C1.52029 0.935104 1.39065 1.41681 1.39134 1.90714C1.39134 2.86953 1.88116 3.71974 2.62585 4.21752C2.18515 4.20365 1.75415 4.08464 1.36878 3.8704V3.90492C1.36891 4.54586 1.5907 5.16704 1.99655 5.66313C2.40239 6.15922 2.96731 6.49968 3.59553 6.6268C3.18643 6.73766 2.75746 6.754 2.34111 6.67459C2.51824 7.22629 2.86346 7.70878 3.32845 8.05452C3.79343 8.40025 4.3549 8.59191 4.93424 8.60267C4.35845 9.05487 3.69919 9.38916 2.99413 9.5864C2.28907 9.78365 1.55204 9.84 0.825195 9.75222C2.09401 10.5682 3.57104 11.0014 5.07959 11C10.1855 11 12.9778 6.77016 12.9778 3.10182C12.9778 2.98236 12.9744 2.86156 12.9691 2.74342C13.5126 2.35061 13.9817 1.86401 14.3543 1.30648L14.3536 1.30582Z"
+                                        fill="#76A713" />
+                                </svg>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.85449 0C8.62054 0 8.84089 0.00649996 9.53379 0.039C10.226 0.0715 10.6973 0.18005 11.112 0.34125C11.541 0.50635 11.9024 0.72995 12.2638 1.0907C12.5943 1.41563 12.8501 1.80868 13.0132 2.2425C13.1738 2.65655 13.283 3.12845 13.3155 3.8207C13.346 4.5136 13.3545 4.73395 13.3545 6.5C13.3545 8.26605 13.348 8.4864 13.3155 9.1793C13.283 9.87155 13.1738 10.3428 13.0132 10.7575C12.8505 11.1916 12.5947 11.5847 12.2638 11.9093C11.9388 12.2397 11.5457 12.4954 11.112 12.6587C10.6979 12.8193 10.226 12.9285 9.53379 12.961C8.84089 12.9915 8.62054 13 6.85449 13C5.08844 13 4.86809 12.9935 4.17519 12.961C3.48294 12.9285 3.01169 12.8193 2.59699 12.6587C2.163 12.4959 1.76988 12.2401 1.44519 11.9093C1.11461 11.5844 0.858848 11.1914 0.695742 10.7575C0.534542 10.3434 0.425992 9.87155 0.393492 9.1793C0.362942 8.4864 0.354492 8.26605 0.354492 6.5C0.354492 4.73395 0.360992 4.5136 0.393492 3.8207C0.425992 3.1278 0.534542 2.6572 0.695742 2.2425C0.858396 1.80842 1.11421 1.41526 1.44519 1.0907C1.76998 0.76 2.16307 0.504224 2.59699 0.34125C3.01169 0.18005 3.48229 0.0715 4.17519 0.039C4.86809 0.00844996 5.08844 0 6.85449 0ZM6.85449 3.25C5.99254 3.25 5.16589 3.59241 4.5564 4.2019C3.9469 4.8114 3.60449 5.63805 3.60449 6.5C3.60449 7.36195 3.9469 8.1886 4.5564 8.7981C5.16589 9.40759 5.99254 9.75 6.85449 9.75C7.71645 9.75 8.5431 9.40759 9.15259 8.7981C9.76208 8.1886 10.1045 7.36195 10.1045 6.5C10.1045 5.63805 9.76208 4.8114 9.15259 4.2019C8.5431 3.59241 7.71645 3.25 6.85449 3.25ZM11.0795 3.0875C11.0795 2.87201 10.9939 2.66535 10.8415 2.51298C10.6891 2.3606 10.4825 2.275 10.267 2.275C10.0515 2.275 9.84484 2.3606 9.69247 2.51298C9.54009 2.66535 9.45449 2.87201 9.45449 3.0875C9.45449 3.30299 9.54009 3.50965 9.69247 3.66202C9.84484 3.8144 10.0515 3.9 10.267 3.9C10.4825 3.9 10.6891 3.8144 10.8415 3.66202C10.9939 3.50965 11.0795 3.30299 11.0795 3.0875ZM6.85449 4.55C7.37166 4.55 7.86765 4.75545 8.23335 5.12114C8.59905 5.48684 8.80449 5.98283 8.80449 6.5C8.80449 7.01717 8.59905 7.51316 8.23335 7.87886C7.86765 8.24455 7.37166 8.45 6.85449 8.45C6.33732 8.45 5.84133 8.24455 5.47563 7.87886C5.10994 7.51316 4.90449 7.01717 4.90449 6.5C4.90449 5.98283 5.10994 5.48684 5.47563 5.12114C5.84133 4.75545 6.33732 4.55 6.85449 4.55Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.24322 1.44509C3.24303 1.82816 3.09067 2.19546 2.81967 2.46619C2.54866 2.73693 2.1812 2.88892 1.79813 2.88873C1.41507 2.88854 1.04776 2.73618 0.777026 2.46517C0.506291 2.19417 0.354301 1.82671 0.354492 1.44364C0.354684 1.06057 0.507041 0.693269 0.778047 0.422534C1.04905 0.151798 1.41651 -0.000191354 1.79958 1.80807e-07C2.18265 0.000191715 2.54995 0.152549 2.82069 0.423555C3.09142 0.694562 3.24341 1.06202 3.24322 1.44509ZM3.28655 3.95828H0.397823V13H3.28655V3.95828ZM7.85074 3.95828H4.97646V13H7.82186V8.25526C7.82186 5.61208 11.2667 5.36654 11.2667 8.25526V13H14.1193V7.2731C14.1193 2.81723 9.02068 2.98333 7.82186 5.17155L7.85074 3.95828Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item second">
+                            <h4>Quick Link</h4>
+                            <ul>
+                                <li>Home</li>
+                                <li>Featured</li>
+                                <li>About Us</li>
+                                <li>Product</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item-left">
+                            <h4 class="one">Blog Post</h4>
+                            <div class="first">
+                                <p>Choosing Plants For Water <br> Conservation</p>
+                                <div class="date">
+                                    August 27, 2021
+                                </div>
+                            </div>
+                            <div class="second">
+                                <p>Maintaining Your Yard <br> This Year</p>
+                                <div class="date">
+                                    August 27, 2021
+                                </div>
+                            </div>
+                            <div class="third">
+                                <p>Tips For Managing Your <br> Irrigation System</p>
+                                <div class="date">
+                                    August 27, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <h4 class="two">Officeal Info</h4>
+                            <div class="before-first">
+                                <p>30 Commercial Road <br> Fratton, Australia</p>
+                            </div>
+                            <div class="before-second">
+                                <p>1-888-452-1829</p>
+                            </div>
+                            <div class="item-bottom">
+                                <h5>Open Hours:</h5>
+                                <p>Mon – Sat: 8 am – 5 pm, <br> Sunday: CLOSED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h6>Copyright © 2021, Orgamic. All Rights Reserved.</h6>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
